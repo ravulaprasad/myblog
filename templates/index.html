@@ -12,40 +12,17 @@
     <div class='navbar'>
         <a href='#' class='logo'>Digypyblog</a>
         <ul class='nav'>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#posts">Posts</a></li>
-            <li><a href="#signin">Signin</a></li>
-            <li><a href="#login">Login</a></li>
+            <li><a href="{% url 'main:home' %}">Home</a></li>
+            <li><a href="{% url 'main:mvt' %}">MVT</a></li>
+            <li><a href="{% url 'main:signin' %}">Signup</a></li>
+            <li><a href="{% url 'main:login' %}>Login</a></li>
         </ul>
     </div>
-    <section class="banner-area" id="home">
-    </section>
     
     <section class="about-area" id="about">
         <div class="text-part">
-            <h1>About Area</h1>
-            <p> </p>
-        </div>
-    </section>
-    
-    <section class="port-area" id="portfolio">
-        <div class="text-part">
-            <h1>Portfolio Area</h1>
-            <p></p>
-        </div>
-    </section>
-    
-    <section class="service-area" id="services">
-        <div class="text-part">
-            <h1></h1>
-            <p></p>
-        </div>
-    </section>
-    
-    <section class="contact-area" id="contact">
-        <div class="text-part">
-            <h1></h1>
-            <p></p>
+            <h1>Whats Digypyblog?</h1>
+            <p>Digypyblog is a django REST Framework python blog created for understanding basic of DJANGO MVT </p>
         </div>
     </section>
 </body>
