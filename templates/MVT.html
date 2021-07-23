@@ -1,35 +1,14 @@
-{% load static %}
+{% extends 'index.html' %}
 
-<!DOCTYPE html>
+{% block content %}
 
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
-<head>
-    <meta charset="utf-8" />
-    <title>Digypyblog</title>
-    <link rel="stylesheet" href="{% static 'css/base.css' %}">
-</head>
-<body >
-    <div class='navbar'>
-        <a href="{% url 'index' %}" class='logo'>Digypyblog</a>
-        <ul class='nav'>
-            <li><a href="{% url 'Post' %}">Post</a></li>
-            <li><a href="{% url 'MVT' %}">MVT</a></li>
-            <li><a href="{% url 'Signup' %}">Signup</a></li>
-            <li><a href="{% url 'Login' %}">Login</a></li>
-           
-        </ul>
+<section class="port-area" id="portfolio">
+    <div class="text-part">
+        <h1>What is MVT</h1>
+        <P>The MVT (Model View Template) is a software design pattern. It is a collection of three important components Model View and Template. The Model helps to handle database. It is a data access layer which handles the data</P>
+        <section class="banner-area" id="home">
+
+        </section>
     </div>
-    
-    <section class="port-area" id="portfolio">
-        <div class="text-part">
-            <h1>What is MVT</h1>
-            <P>The MVT (Model View Template) is a software design pattern. It is a collection of three important components Model View and Template. The Model helps to handle database. It is a data access layer which handles the data</P>
-            <section class="banner-area" id="home">
-    
-            </section>
-        </div>
-</body>
-<script>
-
-</script>
-</html>
+</section>
+{% endblock %}
