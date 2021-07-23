@@ -1,5 +1,5 @@
 ﻿{% load static %}
-
+{% static "img" as baseUrl %}
 <!DOCTYPE html>
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
@@ -22,8 +22,9 @@
     
     <section class="about-area" id="about">
         <div class="text-part">
-            <h1>Whats Digypyblog?</h1>
-            <p>Digypyblog is a django REST Framework python blog created for understanding basic of DJANGO MVT </p>
+            <h1>{{viewpost1.name}}</h1>
+            <p>{{viewpost1.desc}}</p>
+            <img src="{{baseUrl}}/{{viewpost1.img}}" alt="" >
         </div>
     </section>
 </body>

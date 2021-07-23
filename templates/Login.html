@@ -1,4 +1,4 @@
-﻿{% load static %}
+{% load static %}
 
 <!DOCTYPE html>
 
@@ -7,6 +7,7 @@
     <meta charset="utf-8" />
     <title>Digypyblog</title>
     <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    <link rel="stylesheet" href="{% static 'css/form.css' %}">
 </head>
 <body >
     <div class='navbar'>
@@ -20,12 +21,17 @@
         </ul>
     </div>
     
-    <section class="about-area" id="about">
-        <div class="text-part">
-            <h1>Whats Digypyblog?</h1>
-            <p>Digypyblog is a django REST Framework python blog created for understanding basic of DJANGO MVT </p>
+    <!--form start-->
+        <div class="form-area" id="forms">
+            <form action='/accounts/auth/' method='POST'> {% csrf_token %}
+                <div >
+                    <input type='text' name='Username' id='username' placeholder="John or email id"><br>
+                    <input type='password' name='Password' id='password' placeholder="Wa@dsf$1"><br>
+                    <input type='submit' value='login' class="button">
+                </div>
+            </form>
         </div>
-    </section>
+    <!--form end -->
 </body>
 <script>
 
